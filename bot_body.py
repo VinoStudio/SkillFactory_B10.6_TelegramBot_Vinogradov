@@ -22,7 +22,7 @@ def list(message: telebot.types.Message):
 @bot.message_handler(commands=['help'])
 def help(message: telebot.types.Message):
     text = "Для перевода валюты используйте следующую команду:\n\n\
-<имя валюты>\t <в какую валюту перевести> <количество переводимой валюты>\n\n\
+<имя валюты>\t <в какую валюту перевести> \n<количество переводимой валюты>\n\n\
 Например: Доллар Рубль 1 \n\nСписок всех доступных валют: /values"
     bot.reply_to(message, text)
 
